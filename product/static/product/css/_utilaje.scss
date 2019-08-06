@@ -1,0 +1,190 @@
+
+
+
+.utilaje {
+
+    .top-container {
+
+        min-height: 90vh;
+        
+
+        .top-image {
+            background-image: url("../images/fundal_mobil2.png");
+            height: 350px;
+            background-repeat: no-repeat;
+        }
+
+        .title-container {
+
+            .title-images-container {
+
+                .title-innovation {
+                    
+                    text-align: center;
+                    transform: translateY(-16px);
+                    img {
+                        max-width: 98vw;                    
+                    }
+                }
+
+                .title-imagine {
+                    text-align: center;
+                    transform: translateY(-16px);
+                }
+            }
+
+            .text-container {
+                text-align: center;
+                transform: translateY(-16px);
+                
+                p {
+
+                    // transform: translateY(-2em);
+
+                    span {
+                        color: black;
+                        // font-size: $fontSize * 0.76;
+                        font-size: $fontSize * 0.8;
+                        margin: 0 1em;
+                        display: block;
+                    }
+
+                }
+            }
+
+            .everything {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 13vh;
+                // height: 20vh; 
+                margin-right: 1em;
+                margin-bottom: 2em;
+
+            }
+
+            
+
+        }
+    }
+
+    .body-container {
+
+        .firm-container {
+
+            text-align: center;
+
+            .logo-container {            
+                
+                margin: 1em;
+
+                img {
+                    height: 60px;
+                    width: auto;
+                }
+            }
+
+            .download-container {
+
+                a {
+
+                    text-decoration: none;   
+
+                    p {
+                        color: black;
+                    }
+        
+                    img {
+                        height: 50px;
+                        width: auto;
+                        margin: 0.5em;
+                    }
+                }
+            }
+
+            .nume-echipament {
+
+                text-align: left;
+                margin-left: 2em;
+
+                h4 {
+                    color: black;
+                }
+            }
+
+            .slide-show {
+                position: relative;
+                margin-top: 2em;
+
+                .glider {
+                    width: 85%;
+                    background-image: none;
+                    height: auto;
+                    margin: 0 auto;
+                    overflow: hidden;
+
+                    .glider-contain {
+                        
+                        a {
+                            text-decoration: none;
+                            
+                            p {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+        
+                .glider-button {
+                    display: inline-block;
+                }
+        
+                .dots {
+                    display: flex;
+                }
+            
+                .glider-prev {
+                    left: 30px;
+                    top: 20%;
+            
+                    img {
+                        display: inline-block;
+                        height: 50px;
+                        width: auto;
+                        transform: rotate(180deg);
+                    }
+                }
+            
+                .glider-next {
+                    right: 30px;
+                    top: 20%;
+            
+                    img {
+                        height: 50px;
+                        width: auto;
+                    }
+                }
+                
+                .dots {
+                    margin-top: 2em;
+                }
+                
+            }
+        
+            .text-firm-container {
+                border: 2px solid black;
+                width: 75%;
+                height: 150px;
+                margin: 0 auto 1em;
+            }    
+
+            .download-text-container {
+                img {
+                    height: 50px;
+                    width: auto;
+                    margin: 0.5em;
+                }
+            }
+        }
+    }
+}

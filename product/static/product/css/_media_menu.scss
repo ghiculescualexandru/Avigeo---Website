@@ -1,0 +1,258 @@
+@media screen and (min-width: 375px) {
+    .nav-controller {
+        #brand {
+            margin-left: 0.8em;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-controller {
+        #brand {
+            margin-left: 1em;
+        }
+
+        label {
+            margin-right: 1em;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        position: fixed;
+        background: $mainBackground;
+        width: 100%;
+    }
+
+    .nav-controller {
+        display: flex;
+        justify-content: space-between;
+
+        .brand-container {
+            display: flex;
+            justify-content: space-between;
+            height: 10vh;
+            min-height: 60px;
+
+            #brand {
+                display: block;
+                font-size: 1.5em;
+                text-decoration: none;
+                color: $font;
+                align-self: center;
+                padding: 0.7em;
+                text-indent: 1.5em;
+
+                img {
+                    height: 3vh;
+                    width: auto;
+                    
+                }
+            }
+
+            #menu-checkbox {
+                display: none;
+            }
+
+            label {
+                display: none;
+            }
+        }
+
+        .menu-right {
+            right: 0;
+        }
+
+        .menu {
+            align-self: center;
+            margin-right: 2em;
+            height: auto;
+            background: inherit;
+            width: auto;
+
+            .menu-item:first-child {
+                display: none;
+            }
+
+            .menu-item {
+                position: relative;
+                display: inline-block;
+                margin: 0 0.5em;
+                border-bottom: none;
+
+                a {
+                    font-size: 0.8em;
+                    color: $font;
+                    text-decoration: none;
+                    padding: 1em 0.5em;
+                    text-indent: 0;
+                    border-bottom: 2px solid $mainBackground;
+
+                    &:hover {
+                        border-color: $font;
+                    }
+                }      
+            }
+
+            .menu-item-dropdown {
+                
+                a {
+                    border-bottom: none;
+                }
+
+                &:hover > .dropdown-content,
+                &:focus-within > .dropdown-content {
+                    overflow: visible;
+                    opacity: 1;
+
+                    a {
+                        border-top: 2px solid $font;
+                        text-indent: 0;
+                        animation: menuDropdown .2s  ease-in-out;  
+                    }                    
+                }
+
+                .dropdown-controller {
+                    .dropdown-btn-mobile {
+                        display: none;
+                    }
+
+                    .dropdown-btn-desktop {
+                        display: inline-block;
+                        margin-left: 1em;
+
+                        img {
+                            margin-right: 1em;
+                            height: 0.6em;
+                            max-height: 48px;
+                            width: auto;
+                        }
+                    }
+                }
+
+                .dropdown-content {
+                    position: absolute;
+                    width: 100%;
+
+                    a {
+                        @include hover(0.8); 
+                        width: 110%;
+                        background: $mainBackground;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .nav-controller {
+        display: flex;
+        justify-content: space-between;
+
+        .brand-container {
+            display: flex;
+            justify-content: space-between;
+            height: 10vh;
+            min-height: 60px;
+
+            #brand {
+                display: block;
+                font-size: 1.5em;
+                text-decoration: none;
+                color: $font;
+                align-self: center;
+                padding: 0.7em;
+                text-indent: 1.5em;
+            }
+
+            #menu-checkbox {
+                display: none;
+            }
+
+            label {
+                display: none;
+            }
+        }
+
+        .menu-right {
+            right: 0;
+        }
+
+        .menu {
+            align-self: center;
+            margin-right: 2em;
+            height: auto;
+            background: inherit;
+            width: auto;
+
+            .menu-item:first-child {
+                display: none;
+            }
+
+            .menu-item {
+                position: relative;
+                display: inline-block;
+                margin: 0 0.5em;
+                border-bottom: none;
+
+                a {
+                    font-size: 1em;
+                    color: $font;
+                    text-decoration: none;
+                    padding: 1em 0.7em;
+                    text-indent: 0;
+                    border-bottom: 2px solid $mainBackground;
+
+                    &:hover {
+                        border-color: $font;
+                    }
+                }      
+            }
+
+            .menu-item-dropdown {
+                
+                a {
+                    border-bottom: none;
+                }
+
+                &:hover > .dropdown-content,
+                &:focus-within > .dropdown-content {
+                    overflow: visible;
+                    opacity: 1;
+
+                    a {
+                        border-top: 2px solid $font;
+                        text-indent: 0;
+                        animation: menuDropdown .2s  ease-in-out;  
+                    }                    
+                }
+
+                .dropdown-controller {
+                    .dropdown-btn-mobile {
+                        display: none;
+                    }
+
+                    .dropdown-btn-desktop {
+                        display: inline-block;
+                        margin-left: 1em;
+
+                        
+                    }
+                }
+
+                .dropdown-content {
+                    position: absolute;
+                    width: 100%;
+
+                    a {
+                        @include hover(0.8); 
+                        width: 110%;
+                        background: $mainBackground;
+                    }
+                }
+            }
+        }
+    }
+}

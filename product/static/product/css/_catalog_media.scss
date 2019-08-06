@@ -1,0 +1,105 @@
+
+@import  url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+$fontComfortaa: 'Comfortaa', sans-serif;
+$fontMuli: 'Muli', sans-serif;
+
+@media screen and (min-width: 768px) {
+
+    
+
+    .glider-contain {
+        padding: 3em 0;
+        // margin-top: 10vh;
+
+        .page-title {
+            display: block;
+            color: #000;
+            margin-left: 12vw;
+            transform: translateY(0.9em);
+            font-size: $fontSize * 3;
+        }
+
+        #mt {
+            margin-bottom: 13vh;
+        }
+
+        .glider {
+            width: 85%;
+            background-image: none;
+            height: auto;
+            margin: 0 auto;
+        
+            .image-container {
+                background: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 1em;
+
+                @for $i from 5 to 10 {
+                    &:nth-child(#{$i}) {
+                        margin-top: 0;
+                    }
+                }
+
+                a {
+                    padding: 2em;
+                    width: 100%;
+                    height: 100%;
+                    text-decoration: none;
+
+                    img {
+                        width: 150px;
+                        height: auto;
+                    }
+
+                    p {
+                        display: block;
+                        margin-top: 1em;
+                        font-weight: 900;
+                    }
+                }
+
+                
+            }        
+        }
+
+        .glider-button {
+            display: inline-block;
+        }
+
+        .dots {
+            display: flex;
+        }
+    
+        .glider-prev {
+            left: 30px;
+            top: 50%;
+    
+            img {
+                display: inline-block;
+                height: 50px;
+                width: auto;
+                transform: rotate(180deg);
+            }
+        }
+    
+        .glider-next {
+            right: 30px;
+            top: 50%;
+    
+            img {
+                height: 50px;
+                width: auto;
+            }
+        }
+
+        .dots {
+            margin-top: 2em;
+        }
+    }
+    
+    
+}

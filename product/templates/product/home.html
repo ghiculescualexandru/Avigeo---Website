@@ -1,0 +1,77 @@
+{% extends 'product/template.html' %}
+{% load static %}
+
+{% block content %}
+  
+<main class="home">
+    <div class="landing">
+
+        <div class="intro-title">
+            <h1>It's fun <br> to build <br>the <span> impossible </span></h1>
+        </div>
+        <div class="intro-about">
+            <p class="about">
+                De 17 ani investim în inovație și lucrăm cu pasiune, punând la dispoziție cele mai noi tehnologii.
+                <br>Echipa <span> Avigeo </span> oferă suport, rapiditate și solutii tehnice actuale, astfel putând să
+                controleze amănunțit
+                orice material primit, indiferent de dimensiune. Împreună putem construi imposibilul, creativitatea
+                fiind punctul nostru forte.
+            </p>
+            <div class="media">
+                <a href="#">
+                    <a href="http://www.ideeaprint.ro">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="{% static 'product/images/websitelogo_home.png' %}">
+                            <img src="{% static 'product/images/websitelogo_home_negru.png' %}" alt="" class="media-item">
+                        </picture>
+                    </a>
+                </a>
+                <a href="#">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="{% static 'product/images/facebooklogo_home.png' %}">
+                        <img src="{% static 'product/images/facebooklogo_home_negru.png' %}" alt="" class="media-item">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <div class="landing-bottom">
+            <div class="link-container">
+                <a href="">You can be different</a>
+            </div>
+
+            <div class="landing-second">
+                <div class="pre-chart-container">
+                    <div class="chart-container">
+                        <div data-percent="0" class="chart">
+                            <span></span>
+                        </div>
+                        <p> Ani de experiență</p>
+                    </div>
+                    <div class="chart-container">
+                        <div data-percent="0" class="chart">
+                            <span></span>
+
+                        </div>
+                        <p> Clienți multumiți</p>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart">
+                            <span></span>
+                        </div>
+                        <p> Utilaje de print</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="landing-third">
+
+        </div>
+    </div>
+</main>
+
+
+
+<script src="{% static 'product/script/easypiechart.js' %}"></script>
+<script src="{% static 'product/script/home.js' %}"></script>
+
+{% endblock content %}

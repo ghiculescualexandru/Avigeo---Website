@@ -1,0 +1,160 @@
+@media screen and (min-width: 768px) {
+
+    .contact {
+
+    
+
+        .mapouter, .gmap_canvas, #gmap_canvas{
+            height:400px; 
+        }
+        
+        .contact-full {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            margin: 2em 5vw;
+        }
+        
+        .ideaprint-container {
+            width: 60%;
+            /* background: #000; */
+            text-align: left;
+            text-indent: 1em;
+            display: flex;
+            display: block;
+        }
+        
+        
+        #ideaprint-description-contact {
+            width: 90%;
+            margin: 1em 0.5em;
+            font-size: $fontSize * 1.2;
+            align-self: flex-start;
+            /* line-height: 1.6; */
+        }
+        
+        .contacts-only {
+            width: 35%;
+            margin-right: 3em;
+            /* background: red; */
+            .logo {
+                width: 6.5em;
+                height: auto;
+                margin-right: 2em;
+            }
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            .telefon-mobil-number {
+                font-size: $fontSize * 1.1;
+            }
+
+            .contact-details-container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+        }
+        
+        
+        
+        .contact-details {
+            margin: 1em 0;
+            text-align: left;
+        }
+        
+        /***** ORAR ****/
+        
+        .orar-container-desk {
+            /* border: 2px solid red; */
+            width: 93%;
+            max-width: 420px;
+            height: 210px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 2em 2em 2em 0em;
+            transform: translateX(-1em);
+            // padding: 4em;  
+            background-image: url(../images/orar.png);
+            // background: red;;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            p {
+                text-indent: 2em;
+            }
+        }
+        
+        
+        .orar-container-mobile {
+            display: none;  
+        }
+        
+        .orar-text {
+            font-size: 25px;
+            opacity: 0.8;
+            /* text-align: center; */
+        }
+    }
+}
+
+@media screen and (min-width: 1530px) {
+
+    .contact {
+
+        #ideaprint-description-contact {
+            text-indent: 2em;
+        }
+
+        .orar-container-desk {
+            transform: translateX(0);
+            text-align: center;
+            margin-left: 10em;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    
+    .contact {
+
+        .ideaprint-container {
+            font-size: $fontSize * 1.3;
+        }
+
+        .orar-container-desk {
+            h6 {
+                font-size: $fontSize * 2;
+            }
+
+            p {
+                font-size: $fontSize * 1.6;
+                margin-right: 2.7em;
+            }
+        }
+
+        .contacts-only {
+
+            .contact-container {
+                margin: 2em 0;
+                .logo {
+                    width: 9em;
+                    height: auto;
+                }
+
+                p {
+                    font-size: $fontSize * 1.6;
+                    margin-left: 1em;
+
+                }
+            }
+        }
+    }
+}

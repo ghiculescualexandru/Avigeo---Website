@@ -1,0 +1,64 @@
+<main id="oferte">
+    <div class="oferte-container">
+        <p>
+            Pentru a nu pierde timp, folosește calculatorul de prețuri pentru <span class="red"> a estima </span>
+            viitoarea ta comandă.
+            <span class="center">
+                Comenzile se fac doar pe mail.
+                <br>Pentru mai multe detalii, contactează-ne!
+            </span>
+
+        </p>
+    </div>
+
+    <div class="pas-1 oferte-container">
+        <h4 class="oferte-container-heading">Pas 1:</h4>
+        <h5 class="oferte-container-subheading">Alegeți produsul:</h5>
+        <select class="oferte-container-select" id="oferte-container-pas1">
+            <option class="oferte-container-option" value="0"></option>
+            <option class="oferte-container-option" value="1">Produsul1</option>
+            <option class="oferte-container-option" value="2">Produsul2</option>
+            <option class="oferte-container-option" value="3">Produsul3</option>
+            <option class="oferte-container-option" value="4">Produsul4</option>
+            <option class="oferte-container-option" value="5">Produsul5</option>
+        </select>
+    </div>
+
+    <div class="pas-2 oferte-container">
+        <h4 class="oferte-container-heading">Pas 2:</h4>
+        <h5 class="oferte-container-subheading">Alegeți hârtia:</h5>
+        <select class="oferte-container-select" id="oferte-container-pas2" disabled='true'>
+            <option class="oferte-container-option" value="0"></option>
+            <option class="oferte-container-option" value="1">Hartia1</option>
+            <option class="oferte-container-option" value="2">Hartia2</option>
+            <option class="oferte-container-option" value="3">Hartia3</option>
+            <option class="oferte-container-option" value="4">Hartia4</option>
+            <option class="oferte-container-option" value="5">Hartia5</option>
+        </select>
+    </div>
+
+    <div class="pas-3 oferte-container">
+        <h4 class="oferte-container-heading">Pas 3:</h4>
+        <h5 class="oferte-container-subheading">Introduceți gramajul:</h5>
+        <input class="oferte-container-input" id="oferte-container-pas3" disabled='true' placeholder=" Ex: 100">
+    </div>
+
+    <div class="oferte-container generate-price-container">
+        <a class="generate-price"> Generează preț <img src="/images/sageata_right.png" alt=""> </a>
+    </div>
+
+    <div class="oferte-container oferte-container-pret" id="pret">
+        <div class="pret pret-tva-total">
+            <h6>Pret: <span class="value-pret value">10</span></h6>
+        </div>
+        <div class="tva pret-tva-total">
+            <h6>TVA: <span class="value-tva value">2.4</span></h6>
+        </div>
+        <div class="total pret-tva-total">
+            <h6>Total: <span class="value-total value">12.4</span></h6>
+        </div>
+    </div>
+
+</main>
+
+<script src="script/oferte.js"></script>

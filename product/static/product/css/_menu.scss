@@ -1,0 +1,183 @@
+@import 'vars';
+@import 'mixins';
+
+nav {
+    position: fixed;
+    background: $mainBackground;
+    z-index: 9999;
+    width: 100%;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    min-height: 60px;
+
+    #brand {
+        display: block;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: $font;
+        align-self: center;
+        padding: 0.7em;
+
+        &:focus-within {
+            outline: none;
+        }
+
+        img {
+            height: 4vh;
+            min-height: 32px;
+            width: auto;
+        }
+    }
+
+    #menu-checkbox {
+        display: none;
+    }
+
+    label {
+        cursor: pointer;
+        // margin: 1em;
+        padding: 1.3em;
+        align-self: center;
+
+        .navicon {
+            display: block;
+            position: relative;
+            width: 1em;
+            height: 2px;
+            background-color: $font;
+            transition: all .2s ease-out;
+            cursor: pointer;
+
+            &:before,
+            &:after {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: $font;
+                transition: all .2s ease-out;
+            }
+
+            &:before {
+                top: 5px;
+            }
+
+            &:after {
+                top: -5px;
+            }
+        }
+    }
+
+    #menu-checkbox:checked ~ label .navicon {
+        background: transparent;
+    }
+
+    #menu-checkbox:checked ~ label .navicon:before,
+    #menu-checkbox:checked ~ label .navicon:after {
+        top: 0;
+    }
+
+    #menu-checkbox:checked ~ label .navicon:before {
+        transform: rotate(-45deg);
+    }
+
+    #menu-checkbox:checked ~ label .navicon:after {
+        transform: rotate(45deg);
+    }
+}
+
+.menu {
+    position: absolute;
+    list-style: none;
+    width: 60%;
+    height: 100vh;
+    background: $mainBackground;
+    background: black;
+    transition: all .2s ease-out;
+
+    .menu-item {
+        // border-bottom: 1px solid $font;
+
+        h3 {
+            color: $font;
+            padding: 0.7em 0;
+            text-indent: 0.75em;
+        }
+      
+        a {
+            display: inline-block;
+            width: 100%;
+            padding: 2.5vh 0;
+            text-indent: 1em;
+            color: $font;
+            text-decoration: none;
+            transition: opacity .2s ease-out;
+            text-transform: uppercase;
+
+            &:focus-within {
+                // outline: none;
+                opacity: 0.8;
+            }
+            
+            @include hover(0.8);
+
+            .dropdown-btn-desktop {
+                display: none;
+            }
+        }
+
+        .dropdown-controller {
+            display: flex;
+            justify-content: space-between;
+            // align-items: center;
+
+            .dropdown-btn-mobile {
+                color: $font;
+                min-width: 20%;
+                outline: none;
+                border: none;
+                background: transparent;    
+
+                @include hover(0.8);
+
+                img {
+                    margin-right: 1em;
+                    height: 0.8em;
+                    max-height: 48px;
+                    width: auto;
+                }
+            }
+        }
+
+        .dropdown-content {
+            overflow: hidden;
+            transition: height 0.3s ease-out;
+            height: auto;
+
+            a {
+                text-transform: none;
+                text-indent: 2em;
+                border-top: 1px solid $font;
+            }
+        }
+    }
+}
+
+.menu-right {
+    right: -60%;
+}
+
+.menu-open {
+    right: 0;
+}
+
+#spacer {
+    height: 10vh;
+    min-height: 60px;
+}
+

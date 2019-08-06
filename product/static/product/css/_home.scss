@@ -1,0 +1,142 @@
+
+
+.home {
+
+    .landing {
+        min-height: 90vh;
+
+        .intro-title {
+            display: flex;
+            align-items: flex-end;
+            height: 305px;
+            background-image: url('../images/fundal_home_mobil.png');
+            background-position: top right;
+            background-repeat: no-repeat;
+    
+            h1 {
+                color: black;
+                margin-left: 1.2em;
+                margin-left: 0.6em;
+                text-transform: uppercase;
+                font-weight: normal;
+    
+                span {
+                    font-family: 'Freckle Face', cursive;
+                    color: #3c979a;
+                }
+            }
+        }
+    
+        .intro-about {
+            margin-top: 1em;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 1.8em;
+    
+            .about {
+                color: black;
+                width: 70%;
+                text-align: justify;
+                margin: 0 auto;
+                text-indent: 1em;
+    
+                span {
+                    color: red;
+                }
+            }
+    
+            .media {
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                
+                img {
+                    // margin: 1em 0;
+                    padding: 1em;
+                    // background: red;
+                }
+            }
+        }
+    
+        .link-container {
+            text-align: center;
+            margin: 5vh 0 0;
+    
+            a {
+                display: table;
+                // width: 65%;
+                border-radius: 30px;
+                padding: .7em 0.5em;
+                margin: 0 auto;
+                background: #EF4859;     
+                text-decoration: none;
+                color: #E4E4E4;
+                text-transform: uppercase;
+                @include pressButton(rgba(207, 207, 207, 1));
+            }
+        }
+
+        .landing-second {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        
+            .pre-chart-container {
+                margin: 0 0 8%;
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                flex-direction: column;
+            }
+        
+            .chart-container {
+                margin: 1em 0;
+                opacity: 0;
+                padding: 0 1.5em;
+                transition: all ease-in-out 300ms;
+        
+                &:first-child {
+                    margin-top: 20%;
+                }
+        
+                .chart {
+                    width: 90px;
+                    height: 90px;
+                    margin: 0 auto;
+                    position: relative;
+                    text-align: center;
+                    line-height: 90px;
+                    font-size: 2em;
+    
+                    span {
+                        color: black;
+                    }
+                }
+    
+                p {
+                    color: black;
+                    font-size: 1.2em;
+                }
+                
+                canvas {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+    
+    
+
+    .landing-third {
+        height: 480px;
+        background-image: url('../images/imprimanta_home_mobil.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}

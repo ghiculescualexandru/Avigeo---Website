@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+$fontComfortaa: 'Comfortaa', sans-serif;
+
+
+@media screen and (min-width: 500px) {
+    #despre-noi {
+        .landing-container {
+            min-height: 100vh;
+    
+            .image-container {
+                .main-image {
+                    width: 100%;
+                    height: 48vh;
+                    background-image: url('../images/desprenoi_640x260.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 260px;
+                    background-position: top;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 766px) {
+    #despre-noi {
+        .landing-container {
+            min-height: 90vh;
+    
+            .image-container {
+                .main-image {
+                    width: 100%;
+                    height: 48vh;
+                    background-image: url('../images/desprenoi_desk.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: top;
+                }
+            }
+        }
+        
+        .description-container {
+            margin: 2em 3em 0;
+    
+            .description {
+                
+                text-align: center;
+                color: #000;
+                line-height: 1.3;
+                font-size: $fontSize * 1.05;
+            }
+        }
+    
+        .printers {
+
+            h1 {
+                font-size: $fontSize * 1.8;
+            }
+            .printer-container {
+    
+                display: flex;
+                flex-direction: column;
+    
+                .title-container {
+                    text-align: center;
+    
+                    .title {
+                        font-size: $fontSize * 1.65;   
+                        color: #000;
+                    }
+                }
+    
+                .img-container {
+                    background-image: url('../images/semicerc_stanga.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    padding: 1.8em 0;                    
+    
+                    img {
+                        width: 330px;
+                        height: auto;
+                    }
+                }
+                
+                .printer-about {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    p {
+                        font-size: $fontSize * 1.1;
+                    }                
+                }
+            }
+            
+            /* ******* FOR RIGHT *******/
+            /*                         */
+            /* *************************/
+    
+            .printer-container-reverse {
+    
+                display: flex;
+                flex-direction: column;
+    
+                .title-container {
+                    text-align: center;
+    
+                    .title {
+                        font-size: $fontSize * 1.65;   
+                        color: #000;
+                    }
+                }
+    
+                .img-container {
+                    background-image: url('../images/semicerc_cuceprintam.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    padding: 1.8em 0;  
+                    align-self: flex-end;
+    
+                    img {
+                        width: 330px;
+                        height: auto;
+                    }
+                }
+                
+                .printer-about {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    p {
+                        font-size: $fontSize * 1.1;
+                    }
+                }
+            }            
+        }
+
+        .recomanda-container {
+
+            .cnrecomanda {
+                font-size: $fontSize * 1.8;
+                color: black;
+            }
+        }
+    
+        .logo-firme-container {
+            
+            .logo-firme {
+                flex-direction: row;
+    
+                .container-poze:first-child {
+                    margin-left: 2.8em;
+                }
+    
+                .container-poze:last-child {
+                    margin-right: 2.8em;
+                }
+    
+                .container-poze {
+                    justify-content: space-around;
+                    
+                }
+    
+                .poza {
+                    max-width: 20%;
+    
+                }
+            }
+        }   
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #despre-noi {   
+
+        .landing-container {
+            .description-container {
+                .description {
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+         
+        .printers {
+            overflow-x: hidden;
+
+            h1 {
+                font-size: $fontSize * 1.8;
+            }
+
+            .printer-container {
+    
+                display: flex;
+                flex-direction: column;
+    
+                .title-container {
+                    text-align: center;
+                    opacity: 0;
+    
+                    .title {
+                        font-size: $fontSize * 1.65;   
+                        color: #000;
+                    }
+                }
+    
+                .img-container {
+                    background-image: url('../images/semicerc_stanga.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    opacity: 0;
+                    padding: 1.8em 0;                    
+    
+                    img {
+                        width: 330px;
+                        height: auto;
+                    }
+                }
+                
+                .printer-about {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    transform: translateY(-16em);
+                    width: 70%;
+                    margin-left: auto;
+                    // opacity: 0;
+                    margin-bottom: -8em;
+    
+                    p {
+                        font-size: $fontSize * 1;
+                    }                
+                }
+            }
+            
+            /* ******* FOR RIGHT *******/
+            /*                         */
+            /* *************************/
+    
+            .printer-container-reverse {
+    
+                display: flex;
+                flex-direction: column;
+    
+                .title-container {
+                    opacity: 0;
+                    text-align: center;
+    
+                    .title {
+                        font-size: $fontSize * 1.65;   
+                        color: #000;
+                    }
+                }
+    
+                .img-container {
+                    background-image: url('../images/semicerc_cuceprintam.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    padding: 1.8em 0;  
+                    opacity: 0;
+                    align-self: flex-end;
+    
+                    img {
+                        width: 330px;
+                        height: auto;
+                    }
+                }
+                
+                .printer-about {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    transform: translateY(-16em);
+                    width: 70%;
+                    margin-right: auto;
+                    opacity: 0;
+                    margin-bottom: -8em;
+    
+                    p {
+                        font-size: $fontSize * 1;
+                    }
+                }
+            }            
+        }
+    }
+}
+
+@media screen and (min-width: 1530px) {
+    #despre-noi {
+        .landing-container {
+            min-height: 90vh;
+    
+            .image-container {
+                .main-image {
+                    width: 100%;
+                    height: 48vh;
+                    background-image: url('../images/desprenoi_desk.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: top;
+                }
+            }
+        }
+        
+        .description-container {
+            margin: 2em 3em 0;
+            padding-bottom: 2em;
+    
+            .description {
+                width: 70%;
+                margin: 0 auto;
+                text-align: center;
+                color: #000;
+                line-height: 1.3;
+                font-size: $fontSize * 1.05;
+                
+
+                .strategi-title {
+                    font-size: $fontSize * 2.5;
+                }
+            }
+        }
+    
+        .printers {
+
+            h1 {
+                font-size: 35px;
+                
+            }
+            .printer-container {
+    
+                display: flex;
+                flex-direction: column;
+    
+                .title-container {
+                    text-align: center;
+    
+                    .title {
+                        text-align: left;
+                        text-indent: 20vw;
+                        font-size: $fontSize * 1.65;   
+                        color: #000;
+                    }
+                }
+    
+                .img-container {
+                    background-image: url('../images/semicerc_stanga.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    padding: 1.8em 0;                    
+    
+                    img {
+                        width: 400px;
+                        height: auto;
+                    }
+                }
+                
+                .printer-about {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+    
+                    p {
+                        font-size: $fontSize * 1.05;
+                    }
+                }
+            }
+            
+            /* ******* FOR RIGHT *******/
+            /*                         */
+            /* *************************/
+    
+            .printer-container-reverse {
+    
+                display: flex;
+                flex-direction: column;
+    
+                .title-container {
+                    text-align: center;
+    
+                    .title {
+                        text-align: right;
+                        margin-right: 20vw;
+                        font-size: $fontSize * 1.65;   
+                        color: #000;
+                    }
+                }
+    
+                .img-container {
+                    background-image: url('../images/semicerc_cuceprintam.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    padding: 1.8em 0;  
+                    align-self: flex-end;
+    
+                    img {
+                        width: 400px;
+                        height: auto;
+                    }
+                }
+                
+                .printer-about {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    p {
+                        font-size: $fontSize * 1.05;
+                    }
+                }
+            }            
+        }
+
+        .recomanda-container {
+            .cnrecomanda {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    #despre-noi {
+        .landing-container {
+            .description-container {
+                width: 80%;
+                margin: 4em auto 0;
+                font-size: $fontSize * 1.3;
+            }
+        }
+
+        .printers {
+            h1 {
+                font-size: 4em;
+            }
+
+            .printer-container {
+                .title-container {
+                    .title {
+                        font-size: 3em;
+                    }
+                }
+
+                .img-container {
+                    padding: 3em 0;
+
+                    img {
+                        width: 500px;
+                        height: auto;
+                    }
+                }
+
+                .printer-about {
+                    margin-bottom: -10em;
+                    transform: translateY(-21em);
+
+                    p {
+                        font-size: $fontSize * 1.6;
+                    }
+                }
+            }
+
+            .printer-container-reverse {
+                .title-container {
+                    .title {
+                        font-size: 3em;
+                    }
+                }
+
+                .img-container {
+                    padding: 3em 0;
+
+                    img {
+                        width: 500px;
+                        height: auto;
+                    }
+                }
+
+                .printer-about {
+                    transform: translateY(-21em);
+                    margin-bottom: -10em;
+
+                    p {
+                        font-size: $fontSize * 1.6;
+                    }
+                }
+            }
+        }
+    }
+}
+

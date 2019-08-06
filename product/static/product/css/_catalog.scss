@@ -1,0 +1,74 @@
+@import  url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+$fontComfortaa: 'Comfortaa', sans-serif;
+$fontMuli: 'Muli', sans-serif;
+
+.catalog {
+    padding: 6vh 0 15vh;
+    
+    .page-title {
+        display: none;
+        font-family: $fontComfortaa;
+    }
+
+    .bg-container {
+        width: 100%;
+        height: 1480px;
+        background-image: url('../images/mobil_4.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .image-container {
+            text-align: center;
+            margin: 28px 1em 0 0;
+            width: 100%;
+
+            a {
+                display: inline-block;
+                padding: 0 1em 32px;
+
+                img {
+                    width: 76px;
+                    height: auto;
+                }
+
+                p {
+                    display: none;
+                    font-family: $fontMuli;
+                    color: black;
+                    font-size: $fontSize * 1.3;
+                }
+
+                &:focus {
+                    border: 2px solid #000;
+                    outline: none;
+                }
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            @for $i from 5 to 10 {
+                &:nth-child(#{$i}) {
+                    margin-top: 41px;
+                }
+            }
+        }
+    }
+
+    .glider-button {
+        display: none;
+    }
+
+    .dots {
+        display: none;
+    }
+}
+
+.glider-track {
+    text-align: center;
+}
+
+
+// For first element

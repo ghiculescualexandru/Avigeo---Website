@@ -1,0 +1,14 @@
+@mixin pressButton($color) {
+    box-shadow: 5px 5px 5px 0px $color;
+
+    &:active {
+        transform: translate(5px, 5px);
+        box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+    }
+}
+
+@mixin hover($opacity) {
+    &:hover {
+        opacity: $opacity;
+    }
+}

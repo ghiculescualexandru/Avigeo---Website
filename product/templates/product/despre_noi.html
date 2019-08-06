@@ -1,0 +1,139 @@
+{% extends 'product/template.html' %}
+
+{% load static %}
+
+{% block content %}
+  
+<main id="despre-noi">
+    <div class="landing-container">
+        <div class="image-container">
+            <div class="main-image"></div>
+        </div>
+        <div class="description-container">
+            <p class="description">
+                <span class="strategi-title"> STRATEGI ÎN PLUBLICITATE</span> <br><br>
+                Echipa <span class="avigeo-red">Avigeo </span> oferă suport, rapiditate
+                și soluții tehnice actuale, astfel putând să controleze amănunțit orice material primit, indiferent
+                de dimensiune. De aproape <span class="bold"> 20 de ani </span>de activitate în producția
+                publicitară ne-am construit un nume, folosind tehnologii de ultimă generație,
+                fiind în <span class="bold"> vtop 3 </span>firme în Dâmbovița. Pentru că <span class="bold">
+                    misiunea Avigeo</span> este de a diversifica și de a perfecționa constant portofoliul de
+                produse, oferim publicitatea de care aveți nevoie.
+            </p>
+        </div>
+    </div>
+
+
+    <section class="printers" id="cu-ce-printam">
+        <h1>Cu ce printăm?</h1>
+
+
+        {% for utilaj in utilaje %}
+        <div class="{% cycle 'printer-container' 'printer-container-reverse' %}">
+            <div class="title-container">
+                <h2 class="title">{{utilaj.name}}</h2>
+            </div>
+            <div class="img-container">
+                <img src="{{utilaj.utilaj_image.first.image.url}}" alt="">    
+            </div>
+            <div class="printer-about">
+
+                {% for utilaj_description in utilaj.utilaj_descriptions.all %}
+                <p>{{utilaj_description.description}}</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        {% endfor %}
+<!-- 
+
+        <div class="printer-container">
+            <div class="title-container">
+                <h2 class="title">Titlu</h2>
+            </div>
+            <div class="img-container">
+                <img src="{% static 'product/images/canon_8400.png' %}" alt="">
+            </div>
+            <div class="printer-about">
+                <p>-culori: Imprimantă de 64", cu 4 culori, simplu de utilizat, pentru materialele publicitare
+                    utilizate atât la interior, cât şi în aer liber, având un cost total de exploatare scăzut şi
+                    impact ambiental redus.</p>
+                <p>-viteza: viteze de la 7,3 m2/oră până la 29.4 m2/oră, în funcţie de mod.</p>
+                <p>-Flexibilă: Fiabilă şi eficientă Compatibilă cu o gamă amplă de medii de tipărire</p>
+            </div>
+        </div>
+        <div class="printer-container-reverse">
+            <div class="title-container">
+                <h2 class="title">Titlu</h2>
+            </div>
+            <div class="img-container">
+                <img src="{% static 'product/images/canon_8400.png' %}" alt="">
+            </div>
+            <div class="printer-about">
+                <p>-culori: Imprimantă de 64", cu 4 culori, simplu de utilizat, pentru materialele publicitare
+                    utilizate atât la interior, cât şi în aer liber, având un cost total de exploatare scăzut şi
+                    impact ambiental redus.</p>
+                <p>-viteza: viteze de la 7,3 m2/oră până la 29.4 m2/oră, în funcţie de mod.</p>
+                <p>-Flexibilă: Fiabilă şi eficientă Compatibilă cu o gamă amplă de medii de tipărire</p>
+            </div>
+        </div> -->
+    </section>
+
+    <div class=recomanda-container id="cine-ne-recomanda">
+        <p class="cnrecomanda"> Cine ne recomandă?</p>
+    </div>
+    <div class="logo-firme-container">
+        <div class="logo-firme">
+            <div class="container-poze">
+                <img class="poza" src="{% static 'product/images/MAVEXIM.png' %}" alt="Consiliul Judetean Dambovita">
+                <img class="poza" src="{% static 'product/images/beraria_vt.png' %}" alt="Beraria Vlad Tepes">
+            </div>
+            <div class="container-poze">
+                <img class="poza" src="{% static 'product/images/drimand.jpg' %}" alt="Drimand">
+                <img class="poza" src="{% static 'product/images/flax.png' %}" alt="Flax">
+            </div>
+            <div class="container-poze">
+                <img class="poza" src="{% static 'product/images/san_marco.png' %}" alt="Gicabe">
+                <img class="poza" src="{% static 'product/images/primaria-aninoasa.png' %}"
+                    alt="Primaria Comunei Aninoasa">
+            </div>
+        </div>
+        <div class="logo-firme">
+            <div class="container-poze">
+                <img class="poza" src="{% static 'product/images/primariatgv.png' %}"
+                    alt="Primaria Municipiului Targoviste">
+                <img class="poza" src="{% static 'product/images/regata.png' %}" alt="Regata">
+            </div>
+            <div class="container-poze">
+                <img class="poza" src="{% static 'product/images/companiaapa.png' %}"
+                    alt="Spitalul Judetean de Urgenta Targoviste">
+                <img class="poza" src="{% static 'product/images/carpatmontana.png' %}" alt="Beraria Vlad Tepes">
+            </div>
+            <div class="container-poze">
+                <img class="poza" src="{% static 'product/images/complexul-de-natatie.jpg' %}" alt="Beraria Vlad Tepes">
+                <img class="poza" src="{% static 'product/images/gura_de_rai.png' %}" alt="Beraria Vlad Tepes">
+            </div>
+        </div>
+
+        <div class="logo-firme">
+            <div class="container-poze">
+                <img class="poza" src="{% static 'product/images/CJD.png' %}" alt="Primaria Municipiului Targoviste">
+                <img class="poza" src="{% static 'product/images/delponte.png' %}" alt="Regata">
+            </div>
+            <div class="container-poze">
+                <img class="poza" src="{% static 'product/images/sjutgv.png' %}"
+                    alt="Spitalul Judetean de Urgenta Targoviste">
+                <img class="poza" src="{% static 'product/images/gicabe.png' %}" alt="Beraria Vlad Tepes">
+            </div>
+            <div class="container-poze">
+                <img class="poza" src="{% static 'product/images/SUPERCOM.png' %}" alt="Beraria Vlad Tepes">
+                <img class="poza" src="{% static 'product/images/LOGO-KINETIC-ART.png' %}" alt="Beraria Vlad Tepes">
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="{% static 'product/script/despreNoi.js' %}"></script>
+
+{% endblock content %}

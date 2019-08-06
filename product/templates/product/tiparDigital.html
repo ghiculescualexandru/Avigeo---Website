@@ -1,0 +1,126 @@
+{% extends 'product/template.html' %}
+
+{% load static %}
+
+{% block content %}
+  
+<main class="produse-catalog">
+
+
+    <div class="container-titlu">
+        <h1 class="titlu"> Tipar digital</h1>
+    </div>
+
+    <div class="container-paragraf">
+        <P class="paragraf-catalog">
+            Tehnologia de tip <span class="opt-finisare">tipar digital</span> este mai nouă și se dezvoltă într-un
+            ritm foarte alert.
+            În fiecare an apar noi imprimante care sunt mai rapide, tipăresc imagini cu calitate
+            superioară, pe tipuri tot mai diferite de material. Tiparul digital este realizat cu
+            ajutorul imprimantelor moderne de tip laser sau inkjet. Imprimantele digitale transferă
+            simultan patru culori de cerneală (CMYK – albastru, magenta, galben și negru) pe hârtie și
+            creează lucrări cu o diversitate mare de culori printr-o singură tipărire. Acesta permite
+            realizarea tipăriturilor foarte rapid şi direct de pe computer, fără a mai fi nevoie de plăci
+            tipografice sau de timp pentru montaj.
+
+        </P>
+        <P class="paragraf-catalog">
+            Un alt mare avantaj faţă de tiparul clasic îl constituie <span class="opt-finisare">tirajul
+                variat</span>: pot fi
+            executate un singur exemplar, 75 de exemplare sau câteva mii de exemplare la un preţ foarte convenabil.
+            Această metodă este însă rentabilă doar pentru tipărirea de tiraje de până la 450-500 de exemplare.
+            Pentru tipărirea de tiraje mai mari, este mai avantajos tiparul offset,
+            unde comenzile trebuie făcute în avans. De asemenea, poate procesa informație variabilă,
+            lucru imposibil în tiparul clasic (lucrările pot fi complet personalizate și individualizate: nominale,
+            coduri de bare, adrese și altă informație variabilă numerică, imagini personalizate).
+
+        </P>
+        <P class="paragraf-catalog">
+            Pe langă tipar vă punem la dispoziție o gamă largă de <span class="opt-finisare">opțiuni de finisare
+            </span>cum ar fi: laminare, legătorie cu spiră sau broșare, biguire, tăiere la ghilotină, capsare,
+            perforare, înseriere.
+            <br><br>
+        </P>
+    </div>
+
+    <div class="link-magazin">
+        <p class="go-to"></p>
+        <a href="https://www.ideeaprint.ro" class="buton-magazin"> Prețuri</a>
+
+    </div>
+
+    <div class="container-imagini">
+        <div class="img-prezentare">
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_1.png' %}" data-lightbox="mygallery" data-title="Plicuri"><img class="poze-catalog"
+                        src="{% static 'product/images/digital_1.png' %}"></a>
+                <p class="descriere">Plicuri</p>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_2.jpg' %}" data-lightbox="mygallery" data-title="Calendare"><img
+                        class="poze-catalog" src="{% static 'product/images/digital_2.jpg' %}"></a>
+                <p class="descriere">Calendare</p>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_3.jpg' %}" data-lightbox="mygallery" data-title="Stickere"> <img
+                        class="poze-catalog" src="{% static 'product/images/digital_3.jpg' %}"></a>
+                <p class="descriere">Stickere</p>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_4.jpg' %}" data-lightbox="mygallery" data-title="Magneți"> <img class="poze-catalog"
+                        src="{% static 'product/images/digital_4.jpg' %}"></a>
+                <p class="descriere">Magneți</p>
+            </div>
+        </div>
+
+        <div class="img-prezentare">
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_5.png' %}" data-lightbox="mygallery" data-title="Cărți de vizită"> <img
+                        class="poze-catalog" src="{% static 'product/images/digital_5.png' %}"></a>
+                <p class="descriere">Cărți de vizită</p>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_6.jpg' %}" data-lightbox="mygallery" data-title="Notepad-uri"> <img
+                        class="poze-catalog" src="{% static 'product/images/digital_6.jpg' %}"></a>
+                <p class="descriere">Notepad-uri</p>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_7.jpg' %}" data-lightbox="mygallery" data-title="Cataloage"> <img
+                        class="poze-catalog" src="{% static 'product/images/digital_7.jpg' %}"></a>
+                <p class="descriere">Cataloage</p>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_8.png' %}" data-lightbox="mygallery" data-title="Flyere"> <img class="poze-catalog"
+                        src="{% static 'product/images/digital_8.png' %}"></a>
+                <p class="descriere">Flyere</p>
+            </div>
+        </div>
+
+        <div class="img-prezentare img-prezentare-3 ">
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_9.jpg' %}" data-lightbox="mygallery" data-title="Badge-uri"> <img
+                        class="poze-catalog poze-catalog-3" src="{% static 'product/images/digital_9.jpg' %}"></a>
+                <p class="descriere">Badge-uri</p>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_10.jpg' %}" data-lightbox="mygallery" data-title="Mape"> <img
+                        class="poze-catalog poze-catalog-3" src="{% static 'product/images/digital_10.jpg' %}"></a>
+                <p class="descriere">Mape</p>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/digital_11.jpg' %}" data-lightbox="mygallery" data-title="Meniuri"> <img
+                        class="poze-catalog poze-catalog-3" src="{% static 'product/images/digital_11.jpg' %}"></a>
+                <p class="descriere">Meniuri</p>
+            </div>
+        </div>
+
+    </div>
+    <input type="hidden" id="page" name="page" value="digital">
+
+
+
+</main>
+<script src="{% static 'product/script/tiparDigital.js' %}"></script>
+<script src="{% static 'product/script/lightbox-plus-jquery.min.js' %}"></script>
+
+{% endblock content %}
