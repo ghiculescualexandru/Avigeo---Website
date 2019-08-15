@@ -1,0 +1,72 @@
+
+@media screen and (min-width: 768px) {
+.produse-catalog {
+    padding-bottom: 0;
+
+    .container-titlu {
+        
+        .titlu {
+            font-size: 40px;
+            text-align: left;
+             margin-left: 129px;
+        }
+    }
+
+    .container-paragraf {
+
+        .paragraf-catalog {
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size: 17px;
+        }
+    }
+
+    .container-imagini {
+
+        .img-prezentare-3 {
+            padding-left: 120px;
+            padding-right: 120px;
+           
+        }
+
+        .img-prezentare {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 2em;
+            
+            .catalog-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+                a {
+                    .poze-catalog {
+                    max-width: 80%; 
+                    transition: 0.3s; 
+
+                        &:hover {
+                            transform: scale(1.2);
+                            transition: 0.3s;
+                        }
+
+                    }
+
+                    .poze-catalog-mobil {
+                        display: none;
+                    }
+
+                    .poze-catalog-3 {
+                        max-width: 70%;
+                    }
+                }
+            
+            }
+
+        }
+    }
+
+
+}
+}

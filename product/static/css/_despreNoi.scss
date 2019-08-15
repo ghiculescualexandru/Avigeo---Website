@@ -1,0 +1,200 @@
+#despre-noi {
+    .landing-container {
+        min-height: 90vh;
+
+        .image-container {
+            .main-image {
+                width: 100%;
+                height: 48vh;
+                background-image: url('../images/desprenoi_poza.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+    
+    .description-container {
+        margin: 1em 2em;
+
+        .description {
+            text-align: center;
+            color: #000;
+            line-height: 1.3;
+            font-size: $fontSize * 1.05;
+            width: 90%;
+            text-align: justify;
+            margin: 0 auto 2em;
+
+            .strategi-title {
+                font-weight: bold;
+                font-size: $fontSize * 1.5;
+                color: black;
+                text-align: center;
+                display: block;
+                width: 100%;
+                font-family: 'Comfortaa', sans-serif;
+
+            }
+
+            .avigeo-red {
+                color:  #EF4859;
+                font-weight: bold;
+            }
+
+            .bold {
+                font-weight: bold;
+                color: black;
+            }
+        }
+    }
+
+    .printers {
+
+        h1 {
+            text-align: center;
+            color: #000;
+            margin-bottom: 1em;
+            font-family: 'Comfortaa', sans-serif;
+        }
+
+        .printer-container {
+
+            display: flex;
+            flex-direction: column;
+
+            .title-container {
+                text-align: center;
+
+                .title {
+                    margin-top: 1em;
+                    font-size: $fontSize * 1.25;   
+                    color: #000;
+                }
+            }
+
+            .img-container {
+                background-image: url('../images/semicerc_stanga.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding: 1.8em 0;                    
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+            
+            .printer-about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    text-align: justify;
+                    width: 80%;
+                    margin: 0.5em auto;
+                    color: #000;
+                    font-size: $fontSizeMobile;
+                }
+            }
+        }
+        
+        /* ******* FOR RIGHT *******/
+        /*                         */
+        /* *************************/
+
+        .printer-container-reverse {
+
+            display: flex;
+            flex-direction: column;
+
+            .title-container {
+                text-align: center;
+
+                .title {
+                    margin-top: 1em;
+                    font-size: $fontSize * 1.25;   
+                    color: #000;
+                }
+            }
+
+            .img-container {
+                background-image: url('../images/semicerc_cuceprintam.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+                padding: 1.8em 0;  
+                align-self: flex-end;
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+            
+            .printer-about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    text-align: justify;
+                    width: 80%;
+                    color: #000;
+                    margin: 0.5em auto;
+                    font-size: $fontSizeMobile;
+
+                }
+            }
+        }            
+    }
+
+    
+  
+
+.recomanda-container {
+
+    .cnrecomanda {
+        text-align: center;
+        color: black;
+        font-family: 'Comfortaa', sans-serif;
+        margin-top: 5vh;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 1em;
+    }
+}
+
+.logo-firme-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+
+    .logo-firme {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+       
+    
+        .container-poze {
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            
+            .poza {
+                max-width: 45%;
+                border-radius: 20px;
+                margin: 0.4em;
+            }
+        }
+        
+
+    }
+
+
+}
+}

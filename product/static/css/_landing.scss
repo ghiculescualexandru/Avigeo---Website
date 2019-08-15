@@ -1,0 +1,32 @@
+/************************** PRINTER IMAGE *****************************************/
+
+.printer-mobile, .printer-desk{
+    margin-top: 3em;
+    /* margin: auto; */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .printer-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .printer-text {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    width: 16%;
+    height: 60%;
+    font-size: 2.5vw;
+  }
+  
+  .second-image-container {
+    background-image: url("../images/seeout-home_mobil2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -1em;
+  }
+  
+  /**********************************************************************************/

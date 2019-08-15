@@ -1,0 +1,80 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 400ms ease-in-out forwards;
+}
+
+.bounce-in {
+    animation: bounceIn 900ms ease-in-out forwards;
+
+    @keyframes bounceIn {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+        80% {
+            opacity: 1;
+            transform: scale(1.3);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .slide-right {
+        animation: slideRight 1100ms ease-in-out forwards;
+    
+        @keyframes slideRight {
+            0% {
+                position: relative;
+                opacity: 0;
+                right: 100%;
+                
+            }
+            100% {
+                position: relative;
+                opacity: 1;
+                right: 0;
+            }
+        }
+    }
+    
+    .slide-left {
+        animation: slideLeft 1100ms ease-in-out forwards;
+    
+        @keyframes slideLeft {
+            0% {
+                position: relative;
+                opacity: 0;
+                left: 100%;
+            }
+            100% {
+                position: relative;
+                opacity: 1;
+                left: 0;
+            }
+        }
+    }
+}
+
+@keyframes menuDropdown {
+    0% {
+        opacity: 0;
+        transform: rotate(-30deg) translateX(2em);       
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg) translateX(0);
+    }
+}

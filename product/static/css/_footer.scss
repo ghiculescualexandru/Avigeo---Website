@@ -1,0 +1,73 @@
+/********************************** FOOTER ****************************************/
+  footer {
+    background-color: #333;
+    position: absolute;
+  }
+  
+  footer #footer-description {
+    width: 75%;
+    margin: 1em auto;
+    font-size: 14.8px;
+    text-align: justify;
+  }
+  
+  footer .info-container {
+    width: 80%;
+    margin: 0 auto 10px;
+  }
+  
+  footer .info-container .keywords {
+    color: #737373;
+    font-weight: 500;
+    font-size: 16.8px;
+    display: block;
+    text-transform: capitalize;
+  }
+  
+  footer .info-container h5 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 16.8px;
+  }
+  
+  footer .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  footer .footer-links .link-ideaprint {
+    margin-top: 1.3em;
+    margin-left: 2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  
+  footer .footer-links .logo-facebook {
+    width: 4em;
+    height: 4em;
+  }
+  
+  footer .hr {
+    border-bottom: 1px solid #737373;
+    width: 100%;
+    margin-bottom: 0.9em;
+  }
+  
+  footer #powered-by {
+    margin-left: 10px;
+    margin-bottom: 0.5em;
+  }
+  /*# sourceMappingURL=main.css.map */
+  
+  /**********************************************************************************/

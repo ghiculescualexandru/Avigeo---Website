@@ -1,0 +1,111 @@
+
+
+.produse-catalog {
+    background-image: url('../images/bile.png');
+    background-repeat: no-repeat;
+    padding-bottom: 2em;
+    
+
+    .container-titlu {
+        
+        .titlu {
+            font-family: Comfortaa, sans-serif;
+            position:relative;
+            display: block;
+            font-size: 2em;
+            padding-top: 55px;
+            text-align: center;
+            color:black;
+        }
+    }
+
+    .container-paragraf {
+
+        .paragraf-catalog {
+            position:relative;
+            color: black;
+            font-weight: 400;
+            font-size: 15px;
+            margin-top: 1.5em;
+            margin-left: 2.5em;
+            margin-right: 2.5em;
+            text-indent: 50px;
+            text-align: justify;
+            user-select: none;
+
+            .opt-finisare {
+                font-weight: bold;
+                color: black;
+            }
+        }
+    }
+
+    .link-magazin {
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+        display: block;
+        text-align:center;
+
+        .go-to {
+            margin-bottom: 4vh;
+            color:black;
+            font-weight: 700;
+        }
+        .buton-magazin {
+            background-color: #EF4859;
+            color: whitesmoke;
+            padding: 0.5em 1.5em;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            box-shadow: 5px 5px 23px -5px rgba(191,191,191,1);
+            transition: background-color 0.2s ease-out;
+
+            &:hover {
+                background-color: #ff3333;
+            }
+
+            &:active {
+                background-color: #E42217;
+            }
+            
+        }
+        
+    }
+
+
+    .container-imagini {
+
+        .img-prezentare {
+
+            .catalog-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                a {
+                    text-align: center;
+                    
+                    .poze-catalog {
+                        max-width: 60%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 2em;
+                        border-radius: 20px;
+                    }
+               
+                }
+            
+                .descriere { 
+                    text-align: center;
+                    margin-top: 15px;
+                    color: #515151;
+                }
+            }
+        }
+    }
+
+    
+}
