@@ -175,6 +175,11 @@ $fontComfortaa: 'Comfortaa', sans-serif;
     #despre-noi {   
 
         .landing-container {
+            .image-container {
+                .main-image {
+                    min-height: 350px;
+                }
+            }
             .description-container {
                 .description {
                     width: 70%;
@@ -186,7 +191,7 @@ $fontComfortaa: 'Comfortaa', sans-serif;
         }
          
         .printers {
-            overflow-x: hidden;
+            -ms-overflow-x: hidden;
 
             h1 {
                 font-size: $fontSize * 1.8;
@@ -285,6 +290,24 @@ $fontComfortaa: 'Comfortaa', sans-serif;
                     }
                 }
             }            
+        }
+
+        .logo-firme-container {
+            .logo-firme {
+                width: 75%;
+                text-align: center;
+                margin: 0 auto;
+                padding: 1em 0;
+
+                .container-poze {
+                    justify-content: space-evenly;
+                    .poza {
+                        width: 8.5em;
+                        height: auto;
+                        padding: 0 1em;
+                    }
+                }
+            }
         }
     }
 }

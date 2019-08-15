@@ -1,0 +1,65 @@
+{% extends 'product/template.html' %}
+
+{% load static %}
+
+{% block content %}
+  
+<main class="produse-catalog">
+
+
+    <div class="container-titlu">
+        <h1 class="titlu">Termoformare</h1>
+    </div>
+
+    <div class="container-paragraf">
+        <P class="paragraf-catalog">
+            Termoformarea este una dintre <span class="opt-finisare">cele mai vechi</span> și <span
+                class="opt-finisare">cele mai frecvente</span> metode de prelucrare a materialelor
+            plastice. Produse din material plastic termoformat sunt peste tot în jurul nostru și joacă un rol major
+            în viața noastră de zi cu zi. Este un proces foarte versatil folosit la fabricarea unei game largi de
+            produse:
+            de la tăvi simple de ambalare până la piese cu o rezistență mare la impact, cum ar fi cabina de pilotaj.
+            De
+            asemenea, este folosit pe scară largă pentru a face prototipuri de produse pentru a fi ulterior
+            realizate prin alte procese.
+
+        </P>
+        <P class="paragraf-catalog">
+            Aceasta este, în fapt, termenul utilizat pentru a descrie procedeul de producție a pieselor din
+            materiale
+            sub forma unei foi, utilizând temperatura crescută și presiunea.
+        </P>
+        <P class="paragraf-catalog">
+            Termoformarea se realizează prin procedeul de vacuumare a plăcii încălzite pe o matriță negativă sau
+            pozitivă. Acest procedeu permite realizarea unei serii vaste de lucrări deosebite din punct de vedere al
+            aspectului și al structurii, în serii nelimitate.
+        </P>
+    </div>
+    <div class="container-imagini">
+        <div class="img-prezentare">
+            <div class="catalog-img">
+                <a href="{% static 'product/images/termoformare_3.png' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/termoformare_3.png' %}"></a>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/termoformare_1.jpg' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/termoformare_1.jpg' %}"></a>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/termoformare_2.png' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/termoformare_2.png' %}"></a>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/termoformare_4.png' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/termoformare_4.png' %}"></a>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="{% static 'product/script/tiparDigital.js' %}"></script>
+<script src="{% static 'product/script/lightbox-plus-jquery.min.js' %}"></script>
+
+{% endblock content %}

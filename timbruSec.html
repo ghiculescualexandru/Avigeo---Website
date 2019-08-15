@@ -1,0 +1,88 @@
+{% extends 'product/template.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main class="produse-catalog">
+
+    <div class="container-titlu">
+        <h1 class="titlu">Timbru sec</h1>
+    </div>
+
+    <div class="container-paragraf">
+        <P class="paragraf-catalog">
+            Timbrul sec este procedeul de imprimare fără depunere de culoare, în relief negativ pe un material
+            plan cu duritate moderată care, la temperatură ridicată și sub presiunea matriței, preia forma acesteia.
+            Odată realizată, matrița de timbru sec se poate refolosi.
+
+
+        </P>
+        <P class="paragraf-catalog">
+            Aplicarea unui timbru sec se realizează cu ajutorul unei matrițe personalizate cu grafica dorită de
+            către client,
+            care este mai apoi aplicată la temperaturi ridicate și prin exercitarea unei presiuni mari de
+            contact.Pentru un aspect
+            mai impresionant, cu o imprimantă specială, putem aplica folio de orice culoare, executând două
+            modalități de personalizare
+            într-un singur pas. Folio este o metodă de personalizare, care constă în depunerea în relief a unei
+            folii colorate. În acest
+            caz, rezultatul obținut constă într-o adâncitură colorată a obiectului respectiv. Culorile pot varia,
+            astfel că puteți
+            opta pentru argintiu, auriu, alb, negru, roșu, verde, albastru etc. Așadar, personalizarea cu ajutorul
+            unui timbru sec
+            reprezintă un procedeu elegant, care schimbă aspectul materialului.
+
+        </P>
+        <P class="paragraf-catalog">
+            Tehnica ne permite să personalizăm o mulțime de obiecte promoționale, precum: <span
+                class="opt-finisare">agende,
+                portofele, mape din piele, lucrări de licență, lucrări de dizertație și multe altele</span>.
+        </P>
+    </div>
+    <div class="container-imagini">
+        <div class="img-prezentare">
+            <div class="catalog-img">
+                <a href="{% static 'product/images/timbrusec_1.jpg' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/timbrusec_1.jpg' %}"></a>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/timbrusec_6.png' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/timbrusec_6.png' %}"></a>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/timbrusec_4.jpg' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/timbrusec_4.jpg' %}"></a>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/timbrusec_3.jpg' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/timbrusec_3.jpg' %}"></a>
+            </div>
+        </div>
+        <div class="img-prezentare">
+            <div class="catalog-img">
+                <a href="{% static 'product/images/timbrusec_5.png' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/timbrusec_5.png' %}"></a>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/timbrusec_2.jpg' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/timbrusec_2.jpg' %}"></a>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/timbrusec_7.png' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/timbrusec_7.png' %}"></a>
+            </div>
+            <div class="catalog-img">
+                <a href="{% static 'product/images/timbrusec_8.png' %}" data-lightbox="mygallery"><img class="poze-catalog"
+                        src="{% static 'product/images/timbrusec_8.png' %}"></a>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="{% static 'product/script/tiparDigital.js' %}"></script>
+<script src="{% static 'product/script/lightbox-plus-jquery.min.js' %}"></script>
+
+{% endblock content %}

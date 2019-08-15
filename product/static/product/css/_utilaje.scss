@@ -92,6 +92,7 @@
 
                     p {
                         color: black;
+                        font-size: $fontSizeMobile;
                     }
         
                     img {
@@ -104,17 +105,18 @@
 
             .nume-echipament {
 
-                text-align: left;
-                margin-left: 2em;
+                text-align: center;
+                margin-top: 1em;
 
                 h4 {
                     color: black;
+                    font-size: 16px;
+                    margin: 0 1em;
                 }
             }
 
             .slide-show {
                 position: relative;
-                margin-top: 2em;
 
                 .glider {
                     width: 85%;
@@ -124,14 +126,11 @@
                     overflow: hidden;
 
                     .glider-contain {
-                        
-                        a {
-                            text-decoration: none;
-                            
-                            p {
-                                color: black;
-                            }
+                        img {
+                            width: 250px;
+                            height: auto;
                         }
+                        
                     }
                 }
         
@@ -145,11 +144,11 @@
             
                 .glider-prev {
                     left: 30px;
-                    top: 20%;
-            
+                    top: 25%;
+                   
                     img {
                         display: inline-block;
-                        height: 50px;
+                        height: 30px;
                         width: auto;
                         transform: rotate(180deg);
                     }
@@ -157,10 +156,10 @@
             
                 .glider-next {
                     right: 30px;
-                    top: 20%;
+                    top: 25%;
             
                     img {
-                        height: 50px;
+                        height: 30px;
                         width: auto;
                     }
                 }
@@ -172,15 +171,24 @@
             }
         
             .text-firm-container {
-                border: 2px solid black;
-                width: 75%;
-                height: 150px;
+                // border: 2px solid black;
+                width: 80%;
+                min-height: 150px;
+                padding: 0.5em;
                 margin: 0 auto 1em;
+
+                p {
+                    color: black;
+                    text-align: left;
+                    text-indent: 0.7em;
+                    margin-top: 0.7em;
+                    font-size: $fontSizeMobile;
+                }
             }    
 
             .download-text-container {
                 img {
-                    height: 50px;
+                    height: 40px;
                     width: auto;
                     margin: 0.5em;
                 }

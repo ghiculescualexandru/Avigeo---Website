@@ -48,11 +48,11 @@ burger.addEventListener('change', () => {
     }
 })
 
-MAIN.addEventListener('click', () => {
-    burger.checked = false
-    menu.classList.remove('menu-open')
-    closeDropdowns()
-})
+// MAIN.addEventListener('click', () => {
+//     burger.checked = false
+//     menu.classList.remove('menu-open')
+//     closeDropdowns()
+// })
 
 function collapseSection(el) {
     let sectionHeight = el.scrollHeight

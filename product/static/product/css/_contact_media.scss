@@ -1,3 +1,9 @@
+@media screen and (max-width: 321px) {
+    .telefon-number {
+        font-size: 13.5px;
+    }
+}
+
 @media screen and (min-width: 768px) {
 
     .contact {
@@ -12,10 +18,10 @@
             display: flex;
             justify-content: space-around;
             flex-direction: row;
-            margin: 2em 5vw;
-        }
-        
-        .ideaprint-container {
+            margin: 1em 5vw 2em;
+            // background: #000;
+
+            .ideaprint-container {
             width: 60%;
             /* background: #000; */
             text-align: left;
@@ -28,14 +34,17 @@
         #ideaprint-description-contact {
             width: 90%;
             margin: 1em 0.5em;
-            font-size: $fontSize * 1.2;
+            font-size: $fontSize;
             align-self: flex-start;
             /* line-height: 1.6; */
         }
+        }
+        
+        
         
         .contacts-only {
-            width: 35%;
-            margin-right: 3em;
+            width: 40%;
+            margin-right: 4em;
             /* background: red; */
             .logo {
                 width: 6.5em;
@@ -49,8 +58,12 @@
             flex-direction: row;
             justify-content: flex-start;
 
+            .contact-number-container {
+                min-width: 130px;
+            }
+
             .telefon-mobil-number {
-                font-size: $fontSize * 1.1;
+                font-size: $fontSize;
             }
 
             .contact-details-container {
@@ -65,6 +78,7 @@
         .contact-details {
             margin: 1em 0;
             text-align: left;
+            font-size: $fontSize;
         }
         
         /***** ORAR ****/
@@ -88,7 +102,7 @@
             background-repeat: no-repeat;
 
             p {
-                text-indent: 2em;
+                text-indent: 1em;
             }
         }
         
@@ -105,6 +119,22 @@
     }
 }
 
+@media screen and (min-width: 1360px) {
+
+    .contact {
+
+        #ideaprint-description-contact {
+            text-indent: 2em;
+        }
+
+        .orar-container-desk {
+            transform: translateX(0);
+            text-align: center;
+            margin-left: 15%;
+        }
+    }
+}
+
 @media screen and (min-width: 1530px) {
 
     .contact {
@@ -116,7 +146,7 @@
         .orar-container-desk {
             transform: translateX(0);
             text-align: center;
-            margin-left: 10em;
+            // margin-left: 10em;
         }
     }
 }
@@ -135,8 +165,7 @@
             }
 
             p {
-                font-size: $fontSize * 1.6;
-                margin-right: 2.7em;
+                margin-right: 4em;
             }
         }
 
@@ -149,10 +178,21 @@
                     height: auto;
                 }
 
-                p {
-                    font-size: $fontSize * 1.6;
-                    margin-left: 1em;
+                .contact-details-container {
 
+                    p {
+                        font-size: $fontSize;
+                        margin-left: 1em;
+    
+                    }
+                }
+
+                .contact-number-container {
+                    p {
+                        font-size: $fontSize;
+                        margin-left: 1em;
+    
+                    }
                 }
             }
         }

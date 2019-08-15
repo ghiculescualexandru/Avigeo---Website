@@ -50,6 +50,22 @@
     }
 }
 
+@media screen and (min-width: 1300px) {
+    #oferte {
+        background: url('../images/fundal_calculator_1200x600.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 0em 0;
+    }
+    
+    .oferte-container {
+        padding-top: 0.3em;
+        p {
+            text-align: center;
+        }
+    }
+}
+
 @media screen and (min-width: 1535px) {
     #oferte {
         background: url('../images/fundal_calculator_1200x600.png');

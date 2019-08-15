@@ -4,7 +4,7 @@ $fontComfortaa: 'Comfortaa', sans-serif;
 $fontMuli: 'Muli', sans-serif;
 
 .catalog {
-    padding: 6vh 0 15vh;
+    padding: 6vh 0 3vh;
     
     .page-title {
         display: none;
@@ -63,6 +63,7 @@ $fontMuli: 'Muli', sans-serif;
 
     .dots {
         display: none;
+        margin-bottom: 10em;
     }
 }
 

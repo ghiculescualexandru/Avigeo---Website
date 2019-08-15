@@ -24,6 +24,7 @@ function addAttributes() {
 
 window.addEventListener('load', () => {
     loadList()
+
     lightbox.option({
         'resizeDuration': 50,
         'wrapAround': true,

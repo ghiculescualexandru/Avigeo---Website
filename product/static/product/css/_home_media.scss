@@ -95,7 +95,7 @@
             .landing-bottom {
                 .link-container {
                     text-align: center;
-                    margin: 3vh 0 0;
+                    margin: 1em 0 0;
             
                     a {
                         display: table;
@@ -218,6 +218,20 @@
     }
 }
 
+@media screen and (min-width: 1300px) {
+    .landing {
+        .landing-bottom {
+            transform: translateY(-17.3em);
+
+            .landing-second {
+                margin-bottom: 4em;
+            }
+        }
+
+
+    }
+}
+
 @media screen and (min-width: 1530px) {
     .home {
         .landing {
@@ -276,7 +290,7 @@
                 }
 
                 .landing-second {
-                    transform: translateY(-3em);
+                    transform: translateY(2em);
                 }
             }
         }
