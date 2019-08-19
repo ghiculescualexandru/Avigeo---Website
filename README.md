@@ -13,4 +13,4 @@ The main files:
 * *media* where are images, logos or downloadable pdf's from the database;
 * *product/models.py* used to implement classes for the database;
 * *prodcut/views.py* used for views for every webpage.
-
+* *prodcut/urls.py* used for every webpage url.
